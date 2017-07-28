@@ -1,0 +1,8 @@
+{
+  "name": "The Pluribus Project",
+  "description": "Bringing Swarm Imaging to the masses!",
+  "repository": "https://git.heroku.com/pluribus-project.git",
+  "logo": "https://cdn.rawgit.com/heroku/pluribus-project/master/public/PluribusLogo.jpg",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
+}
