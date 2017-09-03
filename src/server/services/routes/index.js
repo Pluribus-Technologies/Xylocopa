@@ -10,11 +10,11 @@ router.connect = function() {
         res.json({ message: 'Welcome to the api' });
     });
 
-    router.get("/account", accountController.getAllAccounts);
-    router.get("/account/:id", accountController.getAccountById);
-    router.post("/account", accountController.createAccount);
-    router.put("/account/:id", accountController.updateAccount);
-    router.delete("/account/:id", accountController.removeAccountById);
+    router.get('/account', accountController.getAllAccounts);
+    router.get('/account/:id', accountController.getAccountById);
+    router.post('/account', accountController.createAccount);
+    router.put('/account/:id', accountController.updateAccount);
+    router.delete('/account/:id', accountController.removeAccountById);
 };
 
 module.exports = router;

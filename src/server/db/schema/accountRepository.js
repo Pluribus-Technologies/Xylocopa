@@ -30,7 +30,7 @@ function createAccount(account, cb) {
 }
 
 // revealing pattern
-module.exports = function() {
+module.exports = (function() {
     return {
         getAllAccounts: getAllAccounts,
         getAccountById: getAccountById,
@@ -39,4 +39,4 @@ module.exports = function() {
         createAccount: createAccount,
         getAccountType: getAccountType
     }
-}();
+})();
