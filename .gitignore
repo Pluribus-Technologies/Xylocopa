@@ -35,3 +35,6 @@ docker-compose.yml
 
 *.css
 package-lock.json
+
+.vscode
+.vs/
