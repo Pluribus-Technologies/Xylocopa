@@ -29,7 +29,7 @@ describe('Create an Account', () => {
         //save account
         repository.createAccount(newAccount, function(err, accountCreated) {
             assert(err === null);
-            assert(accountCreated._id != null);
+            assert(accountCreated._id !== null);
             done();
         });
     });
@@ -109,7 +109,7 @@ describe('Remove account by id', function() {
     it('Remove account by id', function(done) {
         repository.removeAccountById(accountId, function(err, result) {
             assert(err === null);
-            assert(result != null);
+            assert(result !== null);
             repository.getAccountById(accountId, function(err, myAccount) {
                 assert(err === null);
                 assert(myAccount === null);
@@ -143,7 +143,7 @@ describe('Update account by id', function() {
         account.organization = 'Maria Update';
         repository.updateAccount(accountId, account, function(err, result) {
             assert(err === null);
-            assert(result != null);
+            assert(result !== null);
 
             repository.getAccountById(accountId, function(err, accountUpdated) {
                 assert(err === null);
